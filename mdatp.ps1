@@ -87,7 +87,7 @@
 
             # prepare the output
             $object = [ordered]@{
-                "ComputerName" = $env:COMPUTERNAME
+                "HostName" = $(hostname)
                 "OnboardingState" = $OnboardingState
                 "OSBuild" = $OSBuild 
                 "OSEditionID" = $OSEditionID
